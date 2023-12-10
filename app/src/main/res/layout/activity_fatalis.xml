@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MnsterDetail.ElderDragon.Fatalis">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="259dp"
+        android:layout_y="229dp"
+        android:text="WEAKNESSES"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="115dp"
+        android:layout_height="33dp"
+        android:layout_x="249dp"
+        android:layout_y="225dp"
+        app:srcCompat="@drawable/bottom_background" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="501dp"
+        android:layout_height="85dp"
+        android:layout_x="-40dp"
+        android:layout_y="0dp"
+        app:srcCompat="@drawable/bottom_background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        android:layout_x="143dp"
+        android:layout_y="19dp"
+        android:text="Fatalis"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="223dp"
+        android:layout_height="66dp"
+        android:layout_x="94dp"
+        android:layout_y="110dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Fatalis" />
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="115dp"
+        android:layout_height="33dp"
+        android:layout_x="6dp"
+        android:layout_y="226dp"
+        app:srcCompat="@drawable/bottom_background" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="16dp"
+        android:layout_y="230dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:text="WEAKNESSES"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="86dp"
+        android:layout_height="79dp"
+        android:layout_x="3dp"
+        android:layout_y="107dp"
+        app:srcCompat="@drawable/show" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="24dp"
+        android:layout_y="264dp"
+        android:text="Dragon"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="40dp"
+        android:layout_y="301dp"
+        android:text="Fire"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="271dp"
+        android:layout_y="231dp"
+        android:text="ELEMENTS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textViewFire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="293dp"
+        android:layout_y="278dp"
+        android:text="Fire"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/Resistance"
+        android:layout_width="115dp"
+        android:layout_height="33dp"
+        android:layout_x="9dp"
+        android:layout_y="422dp"
+        app:srcCompat="@drawable/bottom_background" />
+
+    <TextView
+        android:id="@+id/Resistances"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="428dp"
+        android:text="RESISTANCES"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="543dp"
+        android:text="Ice"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="467dp"
+        android:text="Thunder"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="506dp"
+        android:text="Water"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/Map"
+        android:layout_width="115dp"
+        android:layout_height="33dp"
+        android:layout_x="246dp"
+        android:layout_y="425dp"
+        app:srcCompat="@drawable/bottom_background" />
+
+    <TextView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="269dp"
+        android:layout_y="432dp"
+        android:text="LOCATION"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/map3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="252dp"
+        android:layout_y="477dp"
+        android:text="Castle Schrade"
+        android:textSize="15dp" />
+
+
+    <ImageView
+        android:id="@+id/Quest"
+        android:layout_width="115dp"
+        android:layout_height="33dp"
+        android:layout_x="126dp"
+        android:layout_y="587dp"
+        app:srcCompat="@drawable/bottom_background" />
+
+    <TextView
+        android:id="@+id/QuestTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="158dp"
+        android:layout_y="593dp"
+        android:text="QUEST"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/quests"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:layout_x="126dp"
+        android:layout_y="630dp"
+        android:text="The Black Dragon, Fade to Black"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="3dp"
+        android:layout_y="1dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+</AbsoluteLayout>

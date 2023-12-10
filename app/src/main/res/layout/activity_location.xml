@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="1dp"
+        android:layout_y="-2dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="501dp"
+        android:layout_height="85dp"
+        android:layout_x="-40dp"
+        android:layout_y="0dp"
+        app:srcCompat="@drawable/bottom_background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="165dp"
+        android:layout_y="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Maps" />
+
+    <TextView
+        android:id="@+id/editTextText2"
+        android:layout_width="223dp"
+        android:layout_height="39dp"
+        android:layout_x="94dp"
+        android:layout_y="137dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ancient Forest"
+        android:textAlignment="center"
+        android:textSize="15dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="86dp"
+        android:layout_height="79dp"
+        android:layout_x="3dp"
+        android:layout_y="107dp"
+        app:srcCompat="@drawable/forest" />
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="341dp"
+        android:layout_y="-2dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_x="1dp"
+        android:layout_y="661dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/itme_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+</AbsoluteLayout>

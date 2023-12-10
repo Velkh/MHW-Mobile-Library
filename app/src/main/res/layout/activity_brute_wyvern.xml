@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BruteWyvern">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="549dp"
+        android:layout_height="94dp"
+        android:layout_x="-67dp"
+        android:layout_y="-1dp"
+        app:srcCompat="@drawable/bottom_background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_x="166dp"
+        android:layout_y="9dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Monsters" />
+
+    <Button
+        android:id="@+id/ElderDragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="42dp"
+
+        android:background="#00FFFFFF"
+        android:text="Elder Dragon"
+        android:textColor="@color/white"
+        android:textSize="25px" />
+
+    <Button
+        android:id="@+id/BruteWyvern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_x="144dp"
+
+        android:layout_y="44dp"
+        android:background="#00FFFFFF"
+        android:text="Brute Wyvern"
+        android:textColor="@color/white"
+        android:textSize="25px" />
+
+    <Button
+        android:id="@+id/FlyingWyvern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="286dp"
+        android:layout_y="43dp"
+
+        android:background="#00FFFFFF"
+        android:text="Flying Wyvern"
+        android:textColor="@color/white"
+        android:textSize="25px" />
+
+    <TextView
+        android:id="@+id/brachydios"
+        android:layout_width="252dp"
+        android:layout_height="67dp"
+        android:layout_x="100dp"
+        android:layout_y="106dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Brachydios"
+        android:textAlignment="center"
+        android:textSize="35dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_x="0dp"
+        android:layout_y="645dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/itme_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:layout_x="10dp"
+        android:layout_y="100dp"
+        app:srcCompat="@drawable/brachy" />
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="343dp"
+        android:layout_y="0dp" />
+
+
+</AbsoluteLayout>

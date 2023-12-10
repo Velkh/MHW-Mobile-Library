@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logiwallpaper"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="226dp"
+        android:layout_height="122dp"
+        android:layout_x="84dp"
+        android:layout_y="58dp"
+        app:srcCompat="@drawable/round_lens_24" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="778dp"
+        android:layout_x="0dp"
+        android:layout_y="1dp"
+        app:srcCompat="@drawable/square" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:layout_x="148dp"
+        android:layout_y="483dp"
+        android:text="Sign Up" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="96dp"
+        android:layout_y="339dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="97dp"
+        android:layout_y="410dp"
+        android:ems="10"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_x="132dp"
+        android:layout_y="106dp"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="98dp"
+        android:layout_y="264dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:text="Email Address"
+        android:inputType="textEmailAddress" />
+
+
+
+</AbsoluteLayout>

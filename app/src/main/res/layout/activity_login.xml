@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logiwallpaper"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="-2dp"
+        android:layout_y="23dp"
+        app:srcCompat="@drawable/square" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="79dp"
+        android:layout_y="465dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="231dp"
+        android:layout_y="464dp"
+        android:text="Sign Up" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="96dp"
+        android:layout_y="305dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="96dp"
+        android:layout_y="391dp"
+        android:ems="10"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="379dp"
+        android:layout_height="129dp"
+        android:layout_x="16dp"
+        android:layout_y="57dp"
+        app:srcCompat="@drawable/round_lens_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="185dp"
+        android:layout_y="110dp"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+
+</AbsoluteLayout>
