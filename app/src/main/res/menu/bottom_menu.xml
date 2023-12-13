@@ -6,9 +6,9 @@
         android:title="Monsters"/>
 
     <item
-        android:id="@+id/bottom_weapons"
-        android:icon="@drawable/weapon"
-        android:title="Weapons"/>
+        android:id="@+id/bottom_quest"
+        android:icon="@drawable/quest1"
+        android:title="Quests"/>
 
     <item
         android:id="@+id/bottom_maps"

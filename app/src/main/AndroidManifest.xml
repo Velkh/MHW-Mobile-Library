@@ -31,7 +31,7 @@
             android:name=".InsectGlaive"
             android:exported="false" />
         <activity
-            android:name=".Weapon"
+            android:name=".Quest"
             android:exported="false" />
         <activity
             android:name=".FlyingWyvern"

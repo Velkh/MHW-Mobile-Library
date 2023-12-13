@@ -7,40 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ChargeBlade extends AppCompatActivity {
+public class Quest extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_charge_blade);
-
-        Button LS = (Button) findViewById(R.id.LS);
-        LS.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent switchActivityIntent = new Intent(ChargeBlade.this, Weapon.class);
-                startActivity(switchActivityIntent);
-
-            }
-        });
-
-        Button IG = (Button) findViewById(R.id.IG);
-        IG.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent switchActivityIntent = new Intent(ChargeBlade.this, InsectGlaive.class);
-                startActivity(switchActivityIntent);
-
-            }
-        });
+        setContentView(R.layout.activity_quest);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setSelectedItemId(R.id.bottom_weapons);
+        bottomNavigationView.setSelectedItemId(R.id.bottom_quest);
 
         bottomNavigationView.setOnItemSelectedListener(item ->{
-            if(item.getItemId() == R.id.bottom_weapons)
+            if(item.getItemId() == R.id.bottom_quest)
             {
                 return true;
             }
@@ -75,6 +56,5 @@ public class ChargeBlade extends AppCompatActivity {
 //            }
 //            return false;
         });
-
     }
 }

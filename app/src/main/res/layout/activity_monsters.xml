@@ -14,54 +14,16 @@
         android:layout_y="0dp"
         app:srcCompat="@drawable/bottom_background" />
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="160dp"
-        android:layout_y="10dp"
+        android:layout_x="161dp"
+        android:layout_y="30dp"
+        android:text="Monsters"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        android:text="Monsters" />
-
-    <Button
-        android:id="@+id/btnElderDragon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginLeft="35dp"
-        android:layout_x="1dp"
-        android:layout_y="36dp"
-        android:background="#00FFFFFF"
-        android:text="Elder Dragon"
-        android:textColor="@color/white"
-        android:textSize="25px" />
-
-    <Button
-        android:id="@+id/btnBruteWyvern"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_x="140dp"
-        android:layout_y="38dp"
-        android:background="#00FFFFFF"
-        android:text="Brute Wyvern"
-        android:textColor="@color/white"
-        android:textSize="25px" />
-
-    <Button
-        android:id="@+id/btnFlyingWyvern"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginRight="35dp"
-        android:layout_x="289dp"
-        android:layout_y="37dp"
-        android:background="#00FFFFFF"
-        android:text="Flying Wyvern"
-        android:textColor="@color/white"
-        android:textSize="25px" />
-
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/fatalis"

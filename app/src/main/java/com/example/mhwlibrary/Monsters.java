@@ -6,18 +6,16 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.mhwlibrary.MnsterDetail.BruteWyvern.Brachydios;
 import com.example.mhwlibrary.MnsterDetail.ElderDragon.Fatalis;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Monsters extends AppCompatActivity {
 
-    int itemIDBottomWeapon = R.id.bottom_weapons;
+    int itemIDBottomQuest = R.id.bottom_quest;
 
     @SuppressLint("NonConstantResourceId")
     @Override
@@ -25,25 +23,6 @@ public class Monsters extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monsters);
 
-        Button btnBruteWyvern = (Button) findViewById(R.id.btnBruteWyvern);
-        btnBruteWyvern.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent switchActivityIntent = new Intent(Monsters.this, BruteWyvern.class);
-                startActivity(switchActivityIntent);
-
-            }
-        });
-
-        Button btnFlyingWyvern = (Button) findViewById(R.id.btnFlyingWyvern);
-        btnFlyingWyvern.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent switchActivityIntent = new Intent(Monsters.this, FlyingWyvern.class);
-                startActivity(switchActivityIntent);
-
-            }
-        });
 
         TextView fatalis = findViewById(R.id.fatalis);
 
@@ -68,9 +47,9 @@ public class Monsters extends AppCompatActivity {
             {
                 return true;
             }
-            else if(item.getItemId() == R.id.bottom_weapons)
+            else if(item.getItemId() == R.id.bottom_quest)
             {
-                startActivity(new Intent(getApplicationContext(), Weapon.class));
+                startActivity(new Intent(getApplicationContext(), Quest.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 return true;

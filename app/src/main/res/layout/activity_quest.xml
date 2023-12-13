@@ -4,15 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InsectGlaive">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_x="2dp"
-        android:layout_y="-1dp"
-        android:orientation="vertical"></LinearLayout>
-
+    tools:context=".Quest" >
 
     <ImageView
         android:id="@+id/imageView7"
@@ -26,49 +18,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="160dp"
-        android:layout_y="10dp"
+        android:layout_x="164dp"
+        android:layout_y="40dp"
+        android:text="Quests"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        android:text="Weapons" />
-
-    <Button
-        android:id="@+id/longsword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginLeft="35dp"
-        android:layout_x="1dp"
-        android:layout_y="36dp"
-        android:background="#00FFFFFF"
-        android:text="Longsword"
-        android:textColor="@color/white"
-        android:textSize="25px" />
-
-    <Button
-        android:id="@+id/insectglaive"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_x="140dp"
-        android:layout_y="38dp"
-        android:background="#00FFFFFF"
-        android:text="Insect Glaive"
-        android:textColor="@color/white"
-        android:textSize="25px" />
-
-    <Button
-        android:id="@+id/chargeblade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginRight="35dp"
-        android:layout_x="289dp"
-        android:layout_y="37dp"
-        android:background="#00FFFFFF"
-        android:text="Charge Blade"
-        android:textColor="@color/white"
-        android:textSize="25px" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/editTextText2"
@@ -78,7 +32,7 @@
         android:layout_y="110dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Fatalis Glaive"
+        android:text="Fatalis Zaggespanon"
         android:textAlignment="center"
         android:textSize="20dp"/>
 
@@ -89,7 +43,7 @@
         android:layout_height="79dp"
         android:layout_x="3dp"
         android:layout_y="107dp"
-        app:srcCompat="@drawable/glaive" />
+        app:srcCompat="@drawable/zagespanon" />
 
     <SearchView
         android:layout_width="wrap_content"

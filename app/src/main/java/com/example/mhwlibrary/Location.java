@@ -29,9 +29,9 @@ public class Location extends AppCompatActivity {
                 finish();
                 return true;
             }
-            else if(item.getItemId() == R.id.bottom_weapons)
+            else if(item.getItemId() == R.id.bottom_quest)
             {
-                startActivity(new Intent(getApplicationContext(),Weapon.class));
+                startActivity(new Intent(getApplicationContext(), Quest.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 return true;
