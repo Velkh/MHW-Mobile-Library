@@ -14,42 +14,29 @@
         android:layout_y="0dp"
         app:srcCompat="@drawable/bottom_background" />
 
+    <ListView
+        android:id="@+id/quest_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_y="90dp"
+        />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="164dp"
-        android:layout_y="40dp"
+        android:layout_x="142dp"
+        android:layout_y="26dp"
         android:text="Quests"
         android:textColor="@color/white"
+        android:textSize="30dp"
         android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/editTextText2"
-        android:layout_width="223dp"
-        android:layout_height="66dp"
-        android:layout_x="94dp"
-        android:layout_y="110dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Fatalis Zaggespanon"
-        android:textAlignment="center"
-        android:textSize="20dp"/>
-
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="86dp"
-        android:layout_height="79dp"
-        android:layout_x="3dp"
-        android:layout_y="107dp"
-        app:srcCompat="@drawable/zagespanon" />
 
     <SearchView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="341dp"
-        android:layout_y="-2dp" />
+        android:layout_x="356dp"
+        android:layout_y="14dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

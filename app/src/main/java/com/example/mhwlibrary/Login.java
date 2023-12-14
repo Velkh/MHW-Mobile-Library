@@ -1,35 +1,96 @@
 package com.example.mhwlibrary;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
+    EditText editTextTextEmail, editTextTextPassword;
+    Button btnLogin;
+    Button btnReg;
+    ProgressBar progressBar;
+    FirebaseAuth mAuth;
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            Intent intent = new Intent(getApplicationContext(),Monsters.class);
+            startActivity(intent);
+            finish();
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button btnsignup = (Button) findViewById(R.id.btnsignup);
-        btnsignup.setOnClickListener(new View.OnClickListener() {
+        mAuth = FirebaseAuth.getInstance();
+        editTextTextEmail = findViewById(R.id.TextEmail);
+        editTextTextPassword = findViewById(R.id.TextPassword);
+        btnLogin = findViewById(R.id.btnlogin);
+        btnReg = findViewById(R.id.btnSignUp);
+        progressBar = findViewById(R.id.progressBar);
+        btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent switchActivityIntent = new Intent(Login.this, SignUp.class);
-                startActivity(switchActivityIntent);
-
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SignUp.class);
+                startActivity(intent);
+                finish();
             }
         });
 
-        Button btnlogin = (Button) findViewById(R.id.btnlogin);
-        btnlogin.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent switchActivityIntent = new Intent(Login.this, Monsters.class);
-                startActivity(switchActivityIntent);
+            public void onClick(View view) {
+                progressBar.setVisibility(View.VISIBLE);
+                String email, username, password;
+                email = String.valueOf(editTextTextEmail.getText());
+                password = String.valueOf(editTextTextPassword.getText());
+
+                if (TextUtils.isEmpty(email)) {
+                    Toast.makeText(Login.this, "Enter Email", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (TextUtils.isEmpty(password)) {
+                    Toast.makeText(Login.this, "Enter Password", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                mAuth.signInWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                progressBar.setVisibility(View.GONE);
+                                if (task.isSuccessful()) {
+                                    Toast.makeText(getApplicationContext(),"Login Successful", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(getApplicationContext(),Monsters.class);
+                                    startActivity(intent);
+                                    finish();
+                                } else {
+                                    Toast.makeText(Login.this, "Authentication failed.",
+                                            Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
 
             }
         });

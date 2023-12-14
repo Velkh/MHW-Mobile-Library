@@ -6,26 +6,46 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 import com.example.mhwlibrary.MnsterDetail.ElderDragon.Fatalis;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Monsters extends AppCompatActivity {
-
-    int itemIDBottomQuest = R.id.bottom_quest;
-
+    FirebaseAuth auth;
+    Button logOut;
+    FirebaseUser user;
     @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monsters);
 
+        auth = FirebaseAuth.getInstance();
+        logOut = findViewById(R.id.btnLogout);
+        user = auth.getCurrentUser();
+            if(user == null){
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+                finish();
+            }
+        logOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         TextView fatalis = findViewById(R.id.fatalis);
-
         fatalis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +57,6 @@ public class Monsters extends AppCompatActivity {
                 // You can perform any other actions you want here
             }
         });
-
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setSelectedItemId(R.id.bottom_monsters);

@@ -6,51 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".Monsters">
 
+    <ListView
+        android:id="@+id/mons_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_y="90dp"
+        />
+
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="501dp"
-        android:layout_height="85dp"
+        android:layout_height="78dp"
         android:layout_x="-40dp"
         android:layout_y="0dp"
         app:srcCompat="@drawable/bottom_background" />
 
 
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:layout_x="3dp"
+        android:layout_y="8dp"
+        android:backgroundTint="@color/black"
+        android:text="LogOut"></Button>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="161dp"
-        android:layout_y="30dp"
+        android:layout_x="132dp"
+        android:layout_y="27dp"
         android:text="Monsters"
         android:textColor="@color/white"
+        android:textSize="30dp"
         android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/fatalis"
-        android:layout_width="119dp"
-        android:layout_height="wrap_content"
-        android:layout_x="94dp"
-        android:layout_y="127dp"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:inputType="text"
-        android:text="Fatalis"
-        android:textAlignment="center"
-        android:textSize="35dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="86dp"
-        android:layout_height="79dp"
-        android:layout_x="3dp"
-        android:layout_y="107dp"
-        app:srcCompat="@drawable/show" />
 
     <SearchView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="341dp"
-        android:layout_y="-2dp" />
+        android:layout_x="355dp"
+        android:layout_y="10dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

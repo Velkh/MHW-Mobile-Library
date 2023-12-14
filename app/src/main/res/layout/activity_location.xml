@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:layout_x="1dp"
         android:layout_y="-2dp"
-        android:orientation="vertical"></LinearLayout>
+        android:orientation="vertical"
+        ></LinearLayout>
 
     <ImageView
         android:id="@+id/imageView7"
@@ -29,28 +30,15 @@
         android:layout_y="25dp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:text="Maps" />
+        android:text="Maps"
+        android:textSize="30dp"/>
 
-    <TextView
-        android:id="@+id/editTextText2"
-        android:layout_width="223dp"
-        android:layout_height="39dp"
-        android:layout_x="94dp"
-        android:layout_y="137dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Ancient Forest"
-        android:textAlignment="center"
-        android:textSize="15dp" />
-
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="86dp"
-        android:layout_height="79dp"
-        android:layout_x="3dp"
-        android:layout_y="107dp"
-        app:srcCompat="@drawable/forest" />
+    <ListView
+        android:id="@+id/maps_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_y="90dp"
+        />
 
     <SearchView
         android:layout_width="wrap_content"
