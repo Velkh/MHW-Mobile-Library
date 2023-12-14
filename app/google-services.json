@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402261585541",
+    "project_id": "mhw-library",
+    "storage_bucket": "mhw-library.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402261585541:android:8d6f8a7e81c959e79283ec",
+        "android_client_info": {
+          "package_name": "com.example.mhwlibrary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzcUoy0m1bpFa--Tzzee_d843MDBmTZ7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
