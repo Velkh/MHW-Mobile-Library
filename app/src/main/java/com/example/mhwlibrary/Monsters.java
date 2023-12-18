@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.example.mhwlibrary.MnsterDetail.ElderDragon.Fatalis;
+import com.example.mhwlibrary.Model.ElderDragon.Fatalis;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

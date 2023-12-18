@@ -1,4 +1,4 @@
-package com.example.mhwlibrary.MnsterDetail.ElderDragon;
+package com.example.mhwlibrary.Model.ElderDragon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
