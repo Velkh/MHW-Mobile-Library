@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">MHW Library</string>
+    <string-array name="Monsters_Type">
+        <item>Flying Wyvern</item>
+        <item>Fanged Wyvern</item>
+        <item>Brute Wyvern</item>
+        <item>Elder Dragon</item>
+        <item>Bird Wyvern</item>
+        <item>Piscine Wyvern</item>
+        <item>Fanged Beasts</item>
+    </string-array>
+
+    <string-array name="Quest_Type">
+        <item>Assignment</item>
+        <item>Optional</item>
+        <item>Events</item>
+        <item>Special Assignment</item>
+    </string-array>
 </resources>

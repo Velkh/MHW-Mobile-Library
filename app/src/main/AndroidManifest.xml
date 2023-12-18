@@ -12,32 +12,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MHWLibrary"
         tools:targetApi="31" >
+
+        <activity android:name=".Detail_Quests"
+            android:exported="false"/>
+
         <activity
-            android:name=".MnsterDetail.BruteWyvern.Brachydios"
+            android:name=".Detail_Locations"
+            android:exported="false" />
+
+        <activity
+            android:name=".Update_Locations"
             android:exported="false" />
         <activity
-            android:name=".MnsterDetail.Quest"
+            android:name=".Update_Quests"
             android:exported="false" />
         <activity
-            android:name=".MnsterDetail.ElderDragon.Fatalis"
+            android:name=".Create_Locations"
             android:exported="false" />
         <activity
             android:name=".Location"
             android:exported="false" />
         <activity
-            android:name=".ChargeBlade"
+            android:name=".Create_Monsters"
             android:exported="false" />
         <activity
-            android:name=".InsectGlaive"
+            android:name=".Detail_Monsters"
             android:exported="false" />
         <activity
             android:name=".Quest"
             android:exported="false" />
         <activity
-            android:name=".FlyingWyvern"
+            android:name=".Update_Monsters"
             android:exported="false" />
         <activity
-            android:name=".BruteWyvern"
+            android:name=".Create_Quests"
             android:exported="false" />
         <activity
             android:name=".Monsters"

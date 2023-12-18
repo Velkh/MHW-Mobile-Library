@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/logiwallpaper"
-    tools:context=".Login">
+    tools:context=".Login"
+    tools:ignore="Deprecated">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -23,8 +24,15 @@
         android:layout_y="465dp"
         android:text="Login" />
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ProgressBar>
+
     <Button
-        android:id="@+id/btnsignup"
+        android:id="@+id/btnSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="231dp"
@@ -32,18 +40,18 @@
         android:text="Sign Up" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/TextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="96dp"
         android:layout_y="305dp"
         android:ems="10"
         android:textColor="@color/black"
-        android:inputType="text"
-        android:text="Username" />
+        android:inputType="textEmailAddress"
+        android:text="Email" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/TextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="96dp"
@@ -71,6 +79,4 @@
         android:textColor="@color/black"
         android:textAlignment="center"
         android:textStyle="bold" />
-
-
 </AbsoluteLayout>

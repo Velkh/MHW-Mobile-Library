@@ -6,57 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".Location">
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/loc_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_x="1dp"
-        android:layout_y="-2dp"
-        android:orientation="vertical"></LinearLayout>
+        android:layout_x="-3dp"
+        android:layout_y="157dp" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="501dp"
-        android:layout_height="85dp"
+        android:layout_height="78dp"
         android:layout_x="-40dp"
         android:layout_y="0dp"
         app:srcCompat="@drawable/bottom_background" />
+
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:layout_x="12dp"
+        android:layout_y="14dp"
+        android:backgroundTint="@color/black"
+        android:text="LogOut"></Button>
+
+    <Button
+        android:id="@+id/btnAddLocation"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:layout_x="324dp"
+        android:layout_y="11dp"
+        android:backgroundTint="@color/black"
+        android:text="+"
+        android:textSize="30dp"></Button>
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:layout_x="142dp"
+        android:layout_y="108dp"
+        android:hint="Search by name"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="165dp"
-        android:layout_y="25dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:text="Maps" />
-
-    <TextView
-        android:id="@+id/editTextText2"
-        android:layout_width="223dp"
-        android:layout_height="39dp"
-        android:layout_x="94dp"
-        android:layout_y="137dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Ancient Forest"
-        android:textAlignment="center"
-        android:textSize="15dp" />
-
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="86dp"
-        android:layout_height="79dp"
-        android:layout_x="3dp"
-        android:layout_y="107dp"
-        app:srcCompat="@drawable/forest" />
-
-    <SearchView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="341dp"
-        android:layout_y="-2dp" />
+        android:layout_x="5dp"
+        android:layout_y="84dp"
+        android:text="Locations"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -67,8 +76,8 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="30dp"
-        android:layout_x="1dp"
-        android:layout_y="661dp"
+        android:layout_x="0dp"
+        android:layout_y="635dp"
         android:background="@drawable/bottom_background"
         android:elevation="2dp"
         app:itemIconSize="30dp"
@@ -76,4 +85,5 @@
         app:itemRippleColor="@android:color/transparent"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottom_menu" />
+
 </AbsoluteLayout>

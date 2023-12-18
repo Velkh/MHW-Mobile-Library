@@ -14,42 +14,58 @@
         android:layout_y="0dp"
         app:srcCompat="@drawable/bottom_background" />
 
+    <ListView
+        android:id="@+id/quest_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="156dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:layout_x="11dp"
+        android:layout_y="19dp"
+        android:backgroundTint="@color/black"
+        android:text="LogOut"></Button>
+
+    <Button
+        android:id="@+id/btnAddQuest"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_default_radius"
+        android:layout_x="324dp"
+        android:layout_y="11dp"
+        android:backgroundTint="@color/black"
+        android:text="+"
+        android:textSize="30dp"></Button>
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:layout_x="142dp"
+        android:layout_y="108dp"
+        android:hint="Search by name"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1" />
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="164dp"
-        android:layout_y="40dp"
+        android:layout_x="8dp"
+        android:layout_y="94dp"
         android:text="Quests"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:textSize="30dp"
         android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/editTextText2"
-        android:layout_width="223dp"
-        android:layout_height="66dp"
-        android:layout_x="94dp"
-        android:layout_y="110dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Fatalis Zaggespanon"
-        android:textAlignment="center"
-        android:textSize="20dp"/>
-
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="86dp"
-        android:layout_height="79dp"
-        android:layout_x="3dp"
-        android:layout_y="107dp"
-        app:srcCompat="@drawable/zagespanon" />
-
-    <SearchView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="341dp"
-        android:layout_y="-2dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
