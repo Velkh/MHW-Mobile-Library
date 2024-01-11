@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
@@ -24,6 +25,17 @@ public class Create_Locations extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_locations);
+
+        ImageButton BackCreateMap = (ImageButton) findViewById(R.id.BackCreateMap);
+
+        BackCreateMap.setOnClickListener(new View.OnClickListener() {
+                                           @Override
+                                           public void onClick(View view) {
+                                               Intent switchActivityIntent = new Intent(Create_Locations.this, Location.class);
+                                               startActivity(switchActivityIntent);
+                                           }
+                                       }
+        );
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
         edtlName = findViewById(R.id.edt_locName);

@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Monsters">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    </ScrollView>
     <ListView
         android:id="@+id/mons_list"
         android:layout_width="match_parent"

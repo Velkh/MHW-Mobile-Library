@@ -77,7 +77,7 @@ public class Detail_Quests extends AppCompatActivity {
             txtqName.setText(quests.getQuest_name());
             txtqType.setText(quests.getQuest_type());
             loadImageFromUrl(quests.getQuest_image());
-            txtqDesc.setText(quests.getQuest_type());
+            txtqDesc.setText(quests.getQuest_desc());
         }
 
 

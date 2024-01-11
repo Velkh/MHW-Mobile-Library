@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -28,6 +29,18 @@ public class Create_Monsters extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_monsters);
+
+        ImageButton BackCreateMonster = (ImageButton) findViewById(R.id.BackCreateMonster);
+
+        BackCreateMonster.setOnClickListener(new View.OnClickListener() {
+                                             @Override
+                                             public void onClick(View view) {
+                                                 Intent switchActivityIntent = new Intent(Create_Monsters.this, Monsters.class);
+                                                 startActivity(switchActivityIntent);
+                                             }
+                                         }
+        );
+
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
         edtmName = findViewById(R.id.edt_monsName);

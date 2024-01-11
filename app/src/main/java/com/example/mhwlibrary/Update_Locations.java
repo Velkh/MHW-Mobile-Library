@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.mhwlibrary.Location;
@@ -35,6 +36,18 @@ public class Update_Locations extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.update_locations);
+
+        ImageButton BackUpdateMap = (ImageButton) findViewById(R.id.BackUpdateMap);
+
+        BackUpdateMap.setOnClickListener(new View.OnClickListener() {
+                                             @Override
+                                             public void onClick(View view) {
+                                                 Intent switchActivityIntent = new Intent(Update_Locations.this, Location.class);
+                                                 startActivity(switchActivityIntent);
+                                             }
+                                         }
+        );
+
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 

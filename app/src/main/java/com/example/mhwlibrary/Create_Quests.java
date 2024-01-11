@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -28,6 +29,18 @@ public class Create_Quests extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_quests);
+
+        ImageButton BackCreateQuest = (ImageButton) findViewById(R.id.BackCreateQuests);
+
+        BackCreateQuest.setOnClickListener(new View.OnClickListener() {
+                                             @Override
+                                             public void onClick(View view) {
+                                                 Intent switchActivityIntent = new Intent(Create_Quests.this, Quest.class);
+                                                 startActivity(switchActivityIntent);
+                                             }
+                                         }
+        );
+
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
         edtqName = findViewById(R.id.edt_qName);
