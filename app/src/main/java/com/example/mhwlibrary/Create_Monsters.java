@@ -41,7 +41,7 @@ public class Create_Monsters extends AppCompatActivity implements View.OnClickLi
                                          }
         );
 
-
+//
         mDatabase = FirebaseDatabase.getInstance().getReference();
         edtmName = findViewById(R.id.edt_monsName);
         spinnerBranch = findViewById(R.id.edt_mType);

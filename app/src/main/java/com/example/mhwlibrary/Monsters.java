@@ -174,3 +174,4 @@ public class Monsters extends AppCompatActivity implements AdapterView.OnItemCli
         startActivity(intent);
     }
 }
+//

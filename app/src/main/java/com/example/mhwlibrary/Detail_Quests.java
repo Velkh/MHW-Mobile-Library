@@ -57,7 +57,7 @@ public class Detail_Quests extends AppCompatActivity {
         txtqDesc = findViewById(R.id.detailQuestDesc);
         btnEdit = findViewById(R.id.btn_edit);
         delBtn = findViewById(R.id.DelQuest);
-
+//
         delBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

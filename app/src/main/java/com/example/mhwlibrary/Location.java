@@ -32,7 +32,7 @@ public class Location extends AppCompatActivity implements AdapterView.OnItemCli
     FirebaseAuth auth;
     FirebaseUser user;
     Button loButton;
-
+//
     private ListView listView;
     private Button btnAdd;
     private AdapterLocations adapter;

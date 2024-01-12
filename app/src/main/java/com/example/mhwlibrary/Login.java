@@ -26,7 +26,7 @@ public class Login extends AppCompatActivity {
     Button btnReg;
     ProgressBar progressBar;
     FirebaseAuth mAuth;
-
+//
     @Override
     public void onStart() {
         super.onStart();

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/logiwallpaper"
     tools:context=".SignUp">
-
+//
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="226dp"

@@ -7,7 +7,7 @@
     android:background="@drawable/logiwallpaper"
     tools:context=".Login"
     tools:ignore="Deprecated">
-
+///
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"

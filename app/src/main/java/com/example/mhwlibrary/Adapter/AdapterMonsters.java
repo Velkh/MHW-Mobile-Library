@@ -88,7 +88,7 @@ public class AdapterMonsters extends BaseAdapter implements Filterable {
 
         }
     }
-
+//
     @Override
     public Filter getFilter() {
         if (monstersFilter == null) {

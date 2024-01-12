@@ -69,7 +69,7 @@ public class Model_Quests implements Parcelable {
     public void setQuest_desc(String quest_desc) {
         this.quest_desc = quest_desc;
     }
-
+    //
     @Override
     public int describeContents() {
         return 0;

@@ -51,7 +51,7 @@ public class Detail_Monsters extends AppCompatActivity {
                 }
             }
         );
-
+//
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         txtmName = findViewById(R.id.txtDetailMonsterName);

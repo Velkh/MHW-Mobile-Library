@@ -50,7 +50,7 @@ public class Model_Locations implements Parcelable {
         maps_image = in.readString();
         maps_desc = in.readString();
     }
-
+//
     public static final Creator<Model_Locations> CREATOR = new Creator<Model_Locations>() {
         @Override
         public Model_Locations createFromParcel(Parcel in) {

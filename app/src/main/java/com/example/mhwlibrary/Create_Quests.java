@@ -24,7 +24,7 @@ public class Create_Quests extends AppCompatActivity implements View.OnClickList
     private Button btnSave;
     private Model_Quests quests;
     DatabaseReference mDatabase;
-
+//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

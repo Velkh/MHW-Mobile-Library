@@ -21,7 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.example.mhwlibrary.Model.Model_Quests;
 public class Update_Quests extends AppCompatActivity implements View.OnClickListener  {
-
+///
     private EditText edtqName, edtqImage, edtqDesc;
     private Button btnUpdate;
     private Spinner spinnerBranch;

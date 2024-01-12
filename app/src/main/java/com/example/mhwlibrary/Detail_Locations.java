@@ -58,7 +58,7 @@ public class Detail_Locations extends AppCompatActivity {
         txtLDesc = findViewById(R.id.txtDetailLocDesc);
         btnEdit = findViewById(R.id.btn_edit);
         delBtn = findViewById(R.id.DelMap);
-
+//
         delBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

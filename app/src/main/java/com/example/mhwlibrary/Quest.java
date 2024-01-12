@@ -46,7 +46,7 @@ public class Quest extends  AppCompatActivity implements AdapterView.OnItemClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quest);
-
+//
         questsList = new ArrayList<>();
 
         edtSearch = findViewById(R.id.edt_search);

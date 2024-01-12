@@ -16,7 +16,7 @@ public class Model_Monsters implements Parcelable {
 
     public Model_Monsters(){
     }
-
+//
     public String getMons_id() {
         return mons_id;
     }

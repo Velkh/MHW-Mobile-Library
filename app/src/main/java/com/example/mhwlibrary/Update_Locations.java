@@ -48,7 +48,7 @@ public class Update_Locations extends AppCompatActivity implements View.OnClickL
                                          }
         );
 
-
+///
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         edtlName = findViewById(R.id.edt_lName);

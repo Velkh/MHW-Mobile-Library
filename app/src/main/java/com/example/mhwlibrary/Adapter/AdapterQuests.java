@@ -28,7 +28,7 @@ public class AdapterQuests extends BaseAdapter implements Filterable {
         this.questsList = questsList;
         this.filteredList = new ArrayList<>(questsList); // Initialize filtered list
     }
-
+//
     @Override
     public int getCount() {
         return filteredList.size(); // Use filtered list size

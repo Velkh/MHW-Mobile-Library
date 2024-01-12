@@ -36,7 +36,7 @@ public class Create_Locations extends AppCompatActivity implements View.OnClickL
                                            }
                                        }
         );
-
+//
         mDatabase = FirebaseDatabase.getInstance().getReference();
         edtlName = findViewById(R.id.edt_locName);
         edtlImage = findViewById(R.id.edt_locImage);

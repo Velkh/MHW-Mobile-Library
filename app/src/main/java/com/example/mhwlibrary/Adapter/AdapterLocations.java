@@ -67,7 +67,7 @@ public class AdapterLocations extends BaseAdapter implements Filterable {
         viewHolder.bind(locations);
         return itemView;
     }
-
+//
     private static class ViewHolder {
         private TextView txtLocName;
         private ImageView imgPhoto;
